@@ -224,6 +224,36 @@ body {
   cursor: pointer;
   z-index: 3;
 }
+.button-container {
+  margin-top: 50px;
+  text-align: center; /* Centers the button */
+}
+
+.button-container .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3085d6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  z-index: 3; /* Ensures the button is on top */
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.button-container .button:hover {
+  background-color: #287bb5;
+}
+
+/* Clear overlapping with other text */
+.ten p {
+  margin: 10px 0;
+  z-index: 1;
+  position: relative;
+}
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
@@ -289,4 +319,18 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
+  /* Ensure container doesn't overlap */
+/* Button Styling */
+
+
+/* Clear overlapping for the smiley */
+.last-smile {
+  margin-top: 20px;
+  font-size: 36px;
+  z-index: 1;
+  position: relative;
+}
+
+
 }
