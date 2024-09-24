@@ -193,6 +193,18 @@ $('document').ready(function(){
 		msgLoop(0);
 		
 	});
+	$('#story').promise().done(function() {
+		$('#photos').fadeIn('slow');
+	
+		// Animate the photos
+		$('#photo1').animate({left: '0', opacity: 1}, 2000);
+		$('#photo2').animate({right: '0', opacity: 1}, 2000);
+		$('#photo3').animate({top: '0', opacity: 1}, 2000);
+	
+		// Animate "Happy Birthday" text to fall from above
+		$('#birthdayText').fadeIn('slow').animate({top: '0', opacity: 1}, 2000);
+	});
+	
 });
 
 
